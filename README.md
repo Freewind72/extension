@@ -156,6 +156,10 @@ sha256 = 158f7685b44de51f6c0df1d153526cbcd3e1bc739a8dfc607721cef75de9e541
 
 ## 构建
 
+```bat
+git clone https://github.com/Freewind72/extension.git
+```
+
 1. 安装 [Inno Setup 6.6.1](https://jrsoftware.org/isdl.php) 或更新版本。
 2. 改脚本头部这几个宏：
 
@@ -341,4 +345,30 @@ ToolSpec = 'Java|JAVA_HOME|java|bin|.exe|jdk25;' +
 
 ## 许可
 
-（在这里填你的许可证，例如 MIT）
+本项目基于 **GNU General Public License v3.0** 发布，完整条款见仓库根目录的 [`LICENSE`](LICENSE) 文件。
+
+```
+Copyright (C) 2026 Freewind72
+
+本程序是自由软件：你可以根据自由软件基金会发布的 GNU 通用公共许可证
+（第 3 版，或你选择的任何更新版本）的条款重新分发和/或修改它。
+
+本程序的分发是希望它有用，但不提供任何担保，甚至不提供适销性或
+特定用途适用性的默示担保。详见 GNU 通用公共许可证。
+```
+
+### 第三方组件
+
+**本项目不分发任何第三方工具**，只是在安装时从各官方站点/镜像下载，因此每个工具仍然受其**原有许可证**约束，与本项目的 GPL-3.0 无关：
+
+| 工具 | 许可证 |
+| --- | --- |
+| OpenJDK | GPL-2.0 with Classpath Exception |
+| Apache Maven | Apache License 2.0 |
+| Node.js | MIT |
+| PHP | PHP License 3.01 |
+| Go | BSD-3-Clause |
+| Python | PSF License Agreement |
+| Gradle | Apache License 2.0 |
+
+清单里配哪些版本、从哪个镜像下载，由使用者自行决定。再分发这些二进制时请自行确认各自的许可条款（尤其是署名与商标要求）。
